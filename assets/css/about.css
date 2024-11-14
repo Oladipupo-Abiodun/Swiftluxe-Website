@@ -1,0 +1,240 @@
+/* About Hero Section */
+.about-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Image Container with Curved Corners */
+.about-hero-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+}
+
+/* Hero Image */
+.about-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Transparent Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(45, 0, 84, 0.721); /* 50% transparent black overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Overlay Main Heading */
+.overlay h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Overlay Paragraph */
+.overlay p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  max-width: 900px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 2em;
+  }
+  .overlay p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay h1 {
+    font-size: 1.5em;
+  }
+  .overlay p {
+    font-size: 0.9em;
+  }
+}
+
+/* Our Mission Section */
+.mission-section {
+  position: relative;
+  padding: 60px 20px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* Centered Mission Content */
+.mission-content h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.mission-content p {
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Decorative Image at Bottom Right */
+.mission-image {
+  position: absolute;
+  bottom: 10px;
+  right: -20px;
+  opacity: 0.2;
+}
+
+.mission-image img {
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+  transform: translate(50%, 50%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mission-content h2 {
+    font-size: 2em;
+  }
+
+  .mission-content p {
+    font-size: 1em;
+  }
+
+  .mission-image img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission-content h2 {
+    font-size: 1.8em;
+  }
+
+  .mission-content p {
+    font-size: 0.9em;
+  }
+
+  .mission-image img {
+    width: 250px;
+  }
+}
+
+/* Centered Italic Text Section */
+.centered-italic-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.centered-italic-section p {
+  font-size: 1.5em;
+  font-style: italic;
+  color: #333;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .centered-italic-section p {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 480px) {
+  .centered-italic-section p {
+    font-size: 1.1em;
+  }
+}
+
+/* Our Vision Section */
+.vision-section {
+  position: relative;
+  padding: 60px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* Centered Vision Content */
+.vision-content h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.vision-content p {
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Decorative Image Positioned at Bottom Left */
+.vision-image {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  opacity: 0.2;
+}
+
+.vision-image img {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  transform: translate(-50%, 50%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .vision-content h2 {
+    font-size: 2em;
+  }
+
+  .vision-content p {
+    font-size: 1em;
+  }
+
+  .vision-image img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vision-content h2 {
+    font-size: 1.8em;
+  }
+
+  .vision-content p {
+    font-size: 0.9em;
+  }
+
+  .vision-image img {
+    width: 250px;
+  }
+}
