@@ -1,0 +1,62 @@
+:root {
+  --text--grey: #1a1a1a;
+  --text--soft: #49546c;
+  --light-grey--300: #f0f2f5;
+  --dark-grey--700: #1b1f28;
+  --light-grey--200: #f6f6f9;
+  --text--default: #1b1f28;
+  --dark-grey--100: #525f7a;
+  --brand--700: #2467e3;
+  --light-grey--900: #8592ad;
+  --dark-grey--500: #2d3443;
+  --text--inverse: white;
+  --dark-grey--400: #363f51;
+  --dimensions--max-width: 1200px;
+  --light-grey--400: #e1e4eb;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+.body {
+  overflow-x: hidden;
+}
+body {
+  color: var(--text--grey);
+  font-family: Aeonik, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  min-height: 100%;
+  margin: 0;
+}
+
+.navbar-3.dark {
+  z-index: 999;
+  justify-content: center;
+  align-self: stretch;
+  width: 100vw;
+  padding-top: 1em;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  display: flex;
+  position: fixed;
+  inset: 0% 0% auto;
+}
+.navbar-3 {
+  background-color: #0000;
+  justify-content: center;
+  width: 100%;
+  max-width: 100vw;
+  padding: 3em 5em 1em;
+  display: flex;
+  position: absolute;
+}
+.w-nav {
+  z-index: 1000;
+  background: #ddd;
+  position: relative;
+}
