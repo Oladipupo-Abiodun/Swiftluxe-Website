@@ -9,37 +9,37 @@ Support	                           :   https://support.wcsrm.com/
 License Details                    :   https://wcsrm.com/license
 ------------------------------------------------------------------*/
 @font-face {
-    font-family: "swiftfont";
-    src: url("../fonts/aoenik/aeonik_regular.ttf") format("truetype");
-    font-weight: 400;
-  }
-  
-  @font-face {
-    font-family: "swiftfont";
-    src: url("../fonts/aoenik/aeonik_medium.otf") format("opentype");
-    font-weight: 600;
-  }
-  
-  @font-face {
-    font-family: "swiftfont";
-    src: url("../fonts/aoenik/aeonik_bold.ttf") format("truetype");
-    font-weight: 700;
-  }
+  font-family: "swiftfont";
+  src: url("../fonts/aoenik/aeonik_regular.ttf") format("truetype");
+  font-weight: 400;
+}
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "swiftfont", 'Poppins', sans-serif;
-    font-size: 0.875rem;
-    background-color:#F1F2F4;
-    overflow:auto
-  }
-  
-  header {
+@font-face {
+  font-family: "swiftfont";
+  src: url("../fonts/aoenik/aeonik_medium.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "swiftfont";
+  src: url("../fonts/aoenik/aeonik_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "swiftfont", "Poppins", sans-serif;
+  font-size: 0.875rem;
+  background-color: #f1f2f4;
+  overflow: auto;
+}
+
+/* header {
     position: fixed;
     top: 0px;
     width: 100%;
@@ -48,138 +48,211 @@ License Details                    :   https://wcsrm.com/license
     z-index: 999;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 40px;
-  }
-  
-  .logo img{
-    width: 100px;
-    height:45px
-  ;
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 15px;
-  }
-  
-  .nav-links li {
-    position: relative;
-  }
-  
-  .nav-links a {
-    /* color: #240046; */
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .btn-get-started {
-    background-color: #240046;
-    color: #ffffff !important;
-    padding: 5px 12px;
-    font-size: .9rem;
-    text-decoration: none;
-    border-radius: 25px !important;
-  }
-  .btn-get-started:hover{
-    background-color: #f91a70;
-  }
-  
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 150px;
-    border-radius: 5px;
-    background-color: #ffffff;
-    list-style: none;
-    
-  }
-  
-  .dropdown-menu li a {
-    padding: 10px;
-    display: block;
-    color: #ffffff
-  }
-  
-  .dropdown:hover .dropdown-menu {
-    display: block;
-    background-color: #240046;
-  }
-  .dropdown-menu li a:hover{
-    color: #f91a70;
-  }
-  .hamburger {
-    display: none;
-    font-size: 1.5em;
-    cursor: pointer;
-  }
-  
-  /* Mobile Menu Styles (initially hidden) */
-  .mobile-nav {
-    display: none; /* Hidden by default */
-    background-color: #ffffff;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-  }
-  
-  .mobile-nav ul {
-    list-style: none;
-    padding: 10px;
-  }
-  
-  .mobile-nav ul li {
-    padding: 10px 15px;
-  }
-  
-  .mobile-nav ul a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .mobile-nav .dropdown-menu {
-    display: none;
-    background-color: #444;
-  }
-  
-  .mobile-nav .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-  /* Show hamburger on mobile */
-  @media (max-width: 768px) {
-    .nav-links, .btn-get-started {
-      display: none;
-    }
-    
-    .hamburger {
-      display: block;
-    }
-  }
-  
-  /* Show mobile-nav when active */
-  .mobile-nav.active {
-    display: block;
-  }
-  
+  } */
+header.dark {
+  z-index: 999;
+  justify-content: center;
+  align-self: stretch;
+  width: 100vw;
+  padding-top: 1em;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  display: flex;
+  background-color: #fff;
+  position: fixed;
+  inset: 0% 0% auto;
+}
 
-  /* Hero Section */
+header {
+  background-color: #0000;
+  justify-content: center;
+  width: 100%;
+  max-width: 100vw;
+  padding: 3em 5em 1em;
+  display: flex;
+  position: absolute;
+  border-bottom: 1.2px solid #f1f2f4;
+}
+
+.center-items {
+  justify-content: flex-end;
+  display: flex;
+}
+
+/* .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 40px;
+} */
+.container {
+  z-index: 99;
+  justify-content: space-between;
+  align-self: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  position: relative;
+}
+/* .logo img {
+  width: 100px;
+  height: 45px;
+} */
+
+.logo {
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0em;
+  justify-content: flex-start;
+  align-self: center;
+  align-items: center;
+  width: 13vw;
+  display: flex;
+}
+.image {
+  width: auto;
+  max-width: 320px;
+  height: 2rem !important;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  border: 0;
+}
+
+.brand {
+  align-self: center;
+  width: 7.5em;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.nav-links li {
+  position: relative;
+  align-self: stretch;
+  align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex;
+}
+
+.nav-links a {
+  /* color: #240046; */
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-get-started {
+  background-color: #240046;
+  color: #ffffff !important;
+  padding: 5px 12px;
+  font-size: 14px;
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 25px !important;
+}
+.btn-get-started:hover {
+  background-color: #f91a70;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 150px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  padding: 10px;
+  display: block;
+  color: #ffffff;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: #240046;
+}
+.dropdown-menu li a:hover {
+  color: #f91a70;
+}
+.hamburger {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/* Mobile Menu Styles (initially hidden) */
+.mobile-nav {
+  display: none; /* Hidden by default */
+  background-color: #ffffff;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.mobile-nav ul li {
+  padding: 10px 15px;
+}
+
+.mobile-nav ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.mobile-nav .dropdown-menu {
+  display: none;
+  background-color: #444;
+}
+
+.mobile-nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Show hamburger on mobile */
+@media (max-width: 768px) {
+  .nav-links,
+  .btn-get-started {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Show mobile-nav when active */
+.mobile-nav.active {
+  display: block;
+}
+
+/* Hero Section */
 .hero-section {
   display: flex;
   gap: 10px;
   padding: 10px;
   margin-top: 40px;
   height: calc(100vh - 50px); /* Full viewport height minus margin */
-  background-color: #F1F2F4;
+  background-color: #f1f2f4;
 }
 
 .left-section {
@@ -213,7 +286,7 @@ License Details                    :   https://wcsrm.com/license
   background-color: #240046;
   color: #fff;
   text-decoration: none;
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-weight: 700;
   border-radius: 30px;
   width: 140px;
@@ -272,119 +345,118 @@ License Details                    :   https://wcsrm.com/license
     height: auto;
   }
 
-  .left-section, .right-section {
+  .left-section,
+  .right-section {
     width: 100%;
     height: auto;
   }
 }
 
-
-  /* Footer Section */
+/* Footer Section */
 .footer {
-    background-color: #240046;
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  /* Centralized Bold Text */
+  background-color: #240046;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Centralized Bold Text */
+.footer-top h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* App Buttons */
+.app-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+.app-buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.app-buttons img {
+  width: 120px;
+  height: auto;
+}
+
+/* Divider Line */
+.footer-divider {
+  border: 0;
+  height: 1px;
+  background-color: #666;
+  margin: 40px auto;
+  width: 90%;
+}
+
+/* Footer Links Section */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-left: 120px;
+}
+
+.footer-column {
+  flex: 1 1 120px;
+  min-width: 120px;
+  text-align: left;
+}
+
+.footer-column a {
+  display: block;
+  color: #ffffff;
+  font-size: 0.9em;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .footer-top h2 {
-    font-size: 1.8em;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 1.5em;
   }
-  
-  /* App Buttons */
-  .app-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-  }
-  
-  .app-buttons button {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
+
   .app-buttons img {
     width: 120px;
-    height: auto;
   }
-  
-  /* Divider Line */
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-top h2 {
+    font-size: 1.2em;
+  }
+
   .footer-divider {
-    border: 0;
-    height: 1px;
-    background-color: #666;
-    margin: 40px auto;
     width: 90%;
   }
-  
-  /* Footer Links Section */
-  .footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding-left: 120px;
-  }
-  
-  .footer-column {
-    flex: 1 1 120px;
-    min-width: 120px;
-    text-align: left;
-  }
-  
-  .footer-column a {
-    display: block;
-    color: #ffffff;
-    font-size: 0.9em;
-    margin-bottom: 8px;
-    text-decoration: none;
-  }
-  
-  .footer-column a:hover {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .footer-top h2 {
-      font-size: 1.5em;
-    }
-  
-    .app-buttons img {
-      width: 120px;
-    }
-  
-    .footer-links {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .footer-column {
-      text-align: center;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .footer-top h2 {
-      font-size: 1.2em;
-    }
-  
-    .footer-divider {
-      width: 90%;
-    }
-  
-    .app-buttons img {
-      width: 100px;
-    }
-  }
-  
 
-  /* Social Media Section Styles */
+  .app-buttons img {
+    width: 100px;
+  }
+}
+
+/* Social Media Section Styles */
 .social-media-section {
   display: flex;
   justify-content: center;
@@ -401,7 +473,7 @@ License Details                    :   https://wcsrm.com/license
   color: #0073e6; /* Change to your brand color */
 }
 
-.social-media-section a img{
+.social-media-section a img {
   width: 30px;
   height: auto;
   color: #fff;
@@ -417,7 +489,7 @@ License Details                    :   https://wcsrm.com/license
 .services-section {
   text-align: center;
   padding: 40px 20px;
-  background-color: #F1F2F4;
+  background-color: #f1f2f4;
 }
 
 .services-section h4 {
@@ -471,7 +543,7 @@ License Details                    :   https://wcsrm.com/license
   margin: 0 auto 15px;
 }
 
-.icon-placeholder img{
+.icon-placeholder img {
   height: 60px;
   border-radius: 50%;
   display: flex;
@@ -677,16 +749,15 @@ License Details                    :   https://wcsrm.com/license
 
 @keyframes floater {
   100% {
-      transform: translateY(-8px);
+    transform: translateY(-8px);
   }
 
   50% {
-      transform: translateY(30px);
-
+    transform: translateY(30px);
   }
 
   0% {
-      transform: translateY(-8px);
+    transform: translateY(-8px);
   }
 }
 
@@ -737,7 +808,6 @@ License Details                    :   https://wcsrm.com/license
   }
 }
 
-
 /* Glass Jar Styling */
 .glass-jar {
   position: fixed; /* Fixed position */
@@ -780,7 +850,7 @@ License Details                    :   https://wcsrm.com/license
   color: #ffffff; /* Arrow color */
   position: relative; /* Position within jar */
   margin-bottom: 10px; /* Space from the bottom */
-  background:none
+  background: none;
 }
 
 /* Fade In/Out */
